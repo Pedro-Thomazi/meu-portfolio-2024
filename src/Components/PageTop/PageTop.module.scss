@@ -1,0 +1,140 @@
+#pageTop {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1f1f1f8a, #1f1f1f), url('../../Images/bgimage.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+
+  .context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+    
+    .containerTitles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      width: 90%;
+      // background-color: red;
+      
+      .div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        // background-color: blue;
+        padding: 0 10px;
+        color: #888;
+        font-size: 1.2rem;
+        transition: .8s;
+      }
+      
+      h1 {
+        font-size: 11vw;
+        font-weight: 200;
+        text-transform: uppercase;
+        transition: .8s;
+        line-height: 1.1em;
+        white-space: nowrap;
+        color: #aaa;
+      }
+
+      h1.toTop {
+        transform: translateY(-100%);
+      }
+
+      .div.hidden {
+        opacity: 0;
+      }
+
+      h1.toDown {
+        transform: translateY(100%);
+      }
+    }
+  }
+}
+
+.mySocials {
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: .4s;
+  z-index: 100;
+
+  a {
+    position: relative;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #888;
+    text-align: center;
+    line-height: 64px;
+    color: #888;
+    cursor: pointer;
+    transition: .4s;
+
+
+    &:hover {
+      background-color: #888;
+
+      svg {
+      color: #000;
+    }
+    } 
+
+    svg {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      position: relative;
+      display: inline;
+      background-color: #aaa;
+      border-radius: 10px;
+      color: #000;
+      top: -70px;
+      left: -5px;
+      white-space: nowrap;
+      opacity: 0;
+      font-size: .9rem;
+      padding: 0 5px;
+      transition: .4s;
+    }
+
+    &:hover p {
+      top: -110px;
+      opacity: 1;
+    }
+  }
+}
+
+.mySocials.showSocials {
+  opacity: 1;
+}
+
+
+// Media ----------------------------------------------------------------
+
+@media (min-width: 1500px) {
+  #pageTop .context .containerTitles h1 {
+    font-size: 11rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #pageTop .context .containerTitles .div {
+    font-size: .9rem;
+    justify-content: space-around;
+  }
+}

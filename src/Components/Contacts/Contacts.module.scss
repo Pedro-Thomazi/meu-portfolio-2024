@@ -1,0 +1,146 @@
+.contactsContainer {
+  border-top: 1px solid #333;
+  margin-top: 100px;
+  padding: 20px 0;
+
+  .myDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+
+    .subDivs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2rem;
+
+      svg {
+        color: #fff;
+      }
+
+      p {
+        color: #444;
+        white-space: nowrap;
+      }
+    }
+
+
+    .mySocials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      transition: .4s;
+      z-index: 100;
+      width: 100%;
+      text-align: center;
+  
+      a {
+        position: relative;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #888;
+        text-align: center;
+        line-height: 50px;
+        color: #888;
+        cursor: pointer;
+        transition: .4s;
+  
+  
+        &:hover {
+          background-color: #888;
+  
+          svg {
+            color: #000;
+          }
+        }
+  
+        svg {
+          font-size: 1.2rem;
+        }
+  
+        p {
+          position: relative;
+          display: inline;
+          background-color: #aaa;
+          border-radius: 10px;
+          color: #000;
+          top: -70px;
+          left: -5px;
+          white-space: nowrap;
+          opacity: 0;
+          font-size: .9rem;
+          padding: 0 5px;
+          transition: .4s;
+        }
+  
+        &:hover p {
+          top: -110px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+
+    h1 {
+      font-size: 9vw;
+      font-weight: 200;
+      color: #333;
+      transition: 1s;
+
+
+      &:nth-child(1) {
+        transform: translateX(-20%);
+      }
+
+      &:nth-child(2) {
+        transform: translateX(20%);
+        font-weight: 400;
+      }
+    }
+
+    svg {
+      color: goldenrod;
+      transform: 1s;
+      animation: goAndBack 2s linear infinite;
+    }
+
+    h1.toLeft {
+      transform: translateX(-2.5%);
+    }
+
+    h1.toRight {
+      transform: translateX(2.5%);
+    }
+  }
+
+
+  
+}
+
+// Media
+@media (max-width: 850px) {
+  .contactsContainer {
+    .myDetails {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 50px;
+
+      .mySocials {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
