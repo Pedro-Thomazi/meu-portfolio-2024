@@ -66,3 +66,12 @@
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 500px) {
+  #navbar {
+    .linksContainer {
+      flex-direction: column;
+    }
+  }
+}
