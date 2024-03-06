@@ -17,32 +17,45 @@ const PageTop = () => {
   }
 
   
+  // useEffect(() => {
+
+  //   const mindHeigth = window.innerHeight - 700
+
+  //   const hiddenHeigth = window.innerHeight + 4600
+
+  //   function handleScroll() {
+  //     const offset = window.scrollY
+  //     if (offset > mindHeigth) {
+  //       setScrolled(true)
+  //     }
+  //     else {
+  //       setScrolled(false)
+  //     }
+
+  //     if (offset > hiddenHeigth) {
+  //       setScrolled(false)
+  //     }
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll)
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [])
+
   useEffect(() => {
-
-    const mindHeigth = window.innerHeight - 700
-
-    const hiddenHeigth = window.innerHeight + 4600
-
     function handleScroll() {
-      const offset = window.scrollY
-      if (offset > mindHeigth) {
-        setScrolled(true)
-      }
-      else {
-        setScrolled(false)
-      }
-
-      if (offset > hiddenHeigth) {
-        setScrolled(false)
-      }
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])
+  }, []);
 
   return (
     <main id={styles.pageTop}>
