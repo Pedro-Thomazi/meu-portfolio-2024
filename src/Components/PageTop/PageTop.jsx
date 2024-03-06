@@ -19,7 +19,7 @@ const PageTop = () => {
   
   useEffect(() => {
 
-    const mindHeigth = window.innerHeight - 900
+    const mindHeigth = window.innerHeight - 700
 
     const hiddenHeigth = window.innerHeight + 4600
 
