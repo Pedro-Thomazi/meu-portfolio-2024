@@ -73,7 +73,7 @@ const PageTop = () => {
       <section id='backTop' className={styles.context}>
         <div className={styles.containerTitles}>
           <h1 className={`${scrolled ? styles.toTop : ''}`}>Olá, eu sou</h1>
-          <div className={`${styles.div} ${scrolled ? styles.hidden : ''}`}><p>Desenvolvedor</p><p>Front-End</p></div>
+          <div className={`${styles.div} ${scrolled ? styles.hidden : ''}`}><p>Desenvolvedor</p><p>Full-Stack</p></div>
           <h1 className={`${scrolled ? styles.toDown : ''}`}>Pedro T.V</h1>
         </div>
       </section>
