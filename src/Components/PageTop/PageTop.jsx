@@ -8,6 +8,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const PageTop = () => {
   const [scrolled, setScrolled] = useState(false)
+  const [scrolledLinks, setScrolledLinks] = useState(true)
 
   function copyEmail() {
     const myEmail = 'pedro.thomazi@hotmail.com'
@@ -16,7 +17,7 @@ const PageTop = () => {
     })
   }
 
-  
+
   // useEffect(() => {
 
   //   const mindHeigth = window.innerHeight - 700
@@ -48,6 +49,16 @@ const PageTop = () => {
     function handleScroll() {
       const isScrolled = window.scrollY > 0;
       setScrolled(isScrolled);
+
+      const offset = window.scrollY
+      const heigthPage = document.body.scrollHeight - 1400
+      
+      if (offset > heigthPage) {
+        setScrolledLinks(false)
+      }
+      else {
+        setScrolledLinks(true)
+      }
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -66,7 +77,7 @@ const PageTop = () => {
           <h1 className={`${scrolled ? styles.toDown : ''}`}>Pedro T.V</h1>
         </div>
       </section>
-      <div className={`${styles.mySocials} ${scrolled ? styles.showSocials : ''}`}>
+      <div className={`${styles.mySocials} ${scrolledLinks ? styles.showSocials : ''}`}>
         <Link to='https://www.linkedin.com/in/pedro-thomazi-viannini/' target='_blank'><FaLinkedinIn /> <p>LinkedIn</p></Link>
         <Link to='https://github.com/pedro-thomazi' target='_blank'><FiGithub /> <p>GitHub</p></Link>
         <Link onClick={copyEmail} ><HiOutlineMail /> <p>Copy E-mail</p></Link>

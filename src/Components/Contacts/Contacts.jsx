@@ -51,7 +51,7 @@ const Contacts = () => {
           <Link to='https://www.linkedin.com/in/pedro-thomazi-viannini/' target='_blank'><FaLinkedinIn /> <p>LinkedIn</p></Link>
           <Link to='https://github.com/pedro-thomazi' target='_blank'><FiGithub /> <p>GitHub</p></Link>
           <Link to='/' onClick={copyEmail} ><HiOutlineMail /> <p>Copy E-mail</p></Link>
-          {/* <Link to='/' ><FaRegNewspaper /> <p>Meu Curriculo</p></Link> */}
+          <Link to='/teste' download ><FaRegNewspaper /> <p>Meu Curriculo</p></Link>
         </div>
 
         <div className={styles.subDivs}>
