@@ -8,6 +8,8 @@ import { FiGithub } from 'react-icons/fi'
 import { HiOutlineMail } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
+import meuCurriculo from './MeuCurriculo.pdf'
+
 const Contacts = () => {
   const [scrolled, setScrolled] = useState(false)
 
@@ -51,7 +53,7 @@ const Contacts = () => {
           <Link to='https://www.linkedin.com/in/pedro-thomazi-viannini/' target='_blank'><FaLinkedinIn /> <p>LinkedIn</p></Link>
           <Link to='https://github.com/pedro-thomazi' target='_blank'><FiGithub /> <p>GitHub</p></Link>
           <Link to='/' onClick={copyEmail} ><HiOutlineMail /> <p>Copy E-mail</p></Link>
-          <Link to='/teste' download ><FaRegNewspaper /> <p>Meu Curriculo</p></Link>
+          <a href={meuCurriculo} download ><FaRegNewspaper /> <p>Meu Curriculo</p></a>
         </div>
 
         <div className={styles.subDivs}>
