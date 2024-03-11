@@ -1,5 +1,6 @@
 #principalsProjects {
   position: relative;
+  background: linear-gradient(45deg, #000000, #060606);
 
   .number {
     position: absolute;
@@ -87,7 +88,6 @@
     width: 100%;
     gap: 20px;
     padding: 10px 20px;
-    margin-bottom: 70px;
 
     a {
       position: relative;
@@ -159,7 +159,12 @@
 // Media --------------------------------------------
 @media (max-width: 1250px) {
   #principalsProjects {
-    margin-top: 50px;
+    padding-top: 50px;
+
+    .number {
+      left: 50px;
+      top: -00px;
+    }
   }
 }
 @media (max-width: 1150px) {

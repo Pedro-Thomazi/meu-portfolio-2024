@@ -1,19 +1,7 @@
 .moreProjects {
-
-  .number {
-    position: absolute;
-    font-size: 9vw;
-    font-weight: 600;
-    color: #333;
-    left: 50px;
-    top: -50px;
-    opacity: 0;
-    transition: .8s;
-
-    &.show {
-      opacity: 1;
-    }
-  }
+  background-image: url('../../Images/bgimage2.jpg');
+  background-size: cover;
+  padding-top: 70px;
 
   .header {
     display: flex;
@@ -169,7 +157,7 @@
 
 @media (max-width: 1250px) {
   .moreProjects {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 }
 

@@ -102,7 +102,6 @@
           padding: 20px 30px;
           border-radius: 20px;
           font-size: 1.7rem;
-          border: 1px solid #555;
         }
       }
 
@@ -110,15 +109,20 @@
         display: flex;
         flex-direction: column;
 
-        div .apresentation {
-          line-height: 35px;
-          font-size: 1.5rem;
+        .resume {
+          border: 1px solid #555;
+
+          .apresentation {
+            line-height: 35px;
+            font-size: 1.5rem;
+          }
         }
 
         .historic {
           display: flex;
           flex-direction: column;
           gap: 20px;
+          border: 1px solid #555;
 
           h2 {
             font-size: 1.7rem;
@@ -138,6 +142,7 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
+          border: 1px solid #555;
 
           h2 {
             font-size: 1.7rem;
@@ -147,12 +152,30 @@
           .allSkills {
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
             text-align: center;
+            border: 1px solid #555;
 
-            p {
-              font-size: 1.2rem;
+            div {
+              position: relative;
+
+              p {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                font-size: 1.2rem;
+                transition: .5s;
+                opacity: 0;
+              }
+
+              &:hover p {
+                opacity: 1;
+                top: 100%;
+              }
             }
           }
         }
@@ -166,6 +189,9 @@
 // Media
 @media (max-width: 1150px) {
   .aboutMeContainer {
+    .number {
+      left: 50px;
+    }
     .context {
       .allContainers {
         flex-direction: column;
@@ -191,6 +217,7 @@
     }
 
     .details {
+      
       p {
         font-size: .7rem;
       }
@@ -201,14 +228,10 @@
         .containerSkills {
           .skills {
             .allSkills {
+              justify-content: start;
               flex-direction: row;
               overflow-x: scroll;
               flex-wrap: nowrap;
-              // div {
-              //   p {
-              //     // display: none;
-              //   }
-              // }
             }
           }
         }

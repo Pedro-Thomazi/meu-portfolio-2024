@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  background-image: url('../../Images/bgimage1.jpg');
+  background-size: cover;
 
   section {
     width: 50%;
@@ -24,7 +26,6 @@
 
   .imagesContainer {
     width: 40vw;
-    // background-color: red;
 
     .images {
       display: flex;

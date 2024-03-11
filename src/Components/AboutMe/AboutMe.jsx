@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 
 // Experiencias
 import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaBootstrap, FaGitAlt, FaPython, FaNodeJs } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoTypescript, BiLogoFirebase } from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTypescript, BiLogoFirebase, BiLogoMongodb } from "react-icons/bi";
 import { SiNextdotjs, SiMysql } from "react-icons/si";
 
 
@@ -52,7 +52,7 @@ const AboutMe = () => {
       <section className={styles.context}>
         <div className={styles.allContainers}>
           <div className={`${styles.container} ${styles.containerText}`}>
-            <div>
+            <div className={styles.resume}>
               <p className={styles.apresentation}>Estudo programação desde 2019, começando com Python e evoluindo para JavaScript, que é o meu principal foco atualmente. No front-end, tenho experiência com React.js, SASS/SCSS e Bootstrap, que são as tecnologias que mais utilizo. No back-end, optei por utilizar Node.js.</p>
             </div>
             <div className={styles.historic}>
@@ -68,55 +68,59 @@ const AboutMe = () => {
               <h2>Experiências</h2>
               <div className={styles.allSkills}>
                 <div>
-                  <FaHtml5 color='orange' size={30} />
+                  <FaHtml5 color='orange' size={50} />
                   <p>HTML5</p>
                 </div>
                 <div>
-                  <FaCss3Alt color='#0066ff' size={30} />
+                  <FaCss3Alt color='#0066ff' size={50} />
                   <p>CSS3</p>
                 </div>
                 <div>
-                  <BiLogoJavascript color='yellow' size={30} />
+                  <BiLogoJavascript color='yellow' size={50} />
                   <p>JavaScript</p>
                 </div>
                 <div>
-                  <FaReact color='#0066ff' size={30} />
+                  <FaReact color='#0066ff' size={50} />
                   <p>React.js</p>
                 </div>
                 <div>
-                  <BiLogoTypescript color='#0066ff' size={30} />
+                  <BiLogoTypescript color='#0066ff' size={50} />
                   <p>TypeScript</p>
                 </div>
                 <div>
-                  <FaNodeJs color='green' size={30} />
+                  <FaNodeJs color='green' size={50} />
                   <p>Node.js</p>
                 </div>
                 <div>
-                  <SiMysql color='orange' size={30} />
+                  <SiMysql color='orange' size={50} />
                   <p>MySQL</p>
                 </div>
                 <div>
-                  <SiNextdotjs color='gray' size={30} />
+                  <BiLogoMongodb color='green' size={50} />
+                  <p>MongoDB</p>
+                </div>
+                <div>
+                  <SiNextdotjs color='gray' size={50} />
                   <p>Next.js</p>
                 </div>
                 <div>
-                  <FaBootstrap color='purple' size={30} />
+                  <FaBootstrap color='purple' size={50} />
                   <p>Bootstrap</p>
                 </div>
                 <div>
-                  <FaSass color='pink' size={30} />
+                  <FaSass color='pink' size={50} />
                   <p>Sass/Scss</p>
                 </div>
                 <div>
-                  <BiLogoFirebase color='orange' size={30} />
+                  <BiLogoFirebase color='orange' size={50} />
                   <p>Firebase</p>
                 </div>
                 <div>
-                  <FaPython color='#0066ff' size={30} />
+                  <FaPython color='#0066ff' size={50} />
                   <p>Python</p>
                 </div>
                 <div>
-                  <FaGitAlt color='orange' size={30} />
+                  <FaGitAlt color='orange' size={50} />
                   <p>GIT/GitHub</p>
                 </div>
               </div>
