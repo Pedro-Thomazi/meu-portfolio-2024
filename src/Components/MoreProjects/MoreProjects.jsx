@@ -5,14 +5,8 @@ import { FaArrowsLeftRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 import amazon from '../../Images/imgProjects/replicaAmazom.png'
-import calendario from '../../Images/imgProjects/fotoCalendar.png'
 import apiPokemon from '../../Images/imgProjects/fotoPokeM.png'
 import crudEmJavascript from '../../Images/imgProjects/crudJavascript.png'
-import teclado from '../../Images/imgProjects/teclado.png'
-import hoFame from '../../Images/imgProjects/fotoFame.png'
-import cronometro from '../../Images/imgProjects/cronometro.png'
-import muitaMelodia from '../../Images/imgProjects/fotoMuitaM.png'
-import calculadora from '../../Images/imgProjects/calculadora.png'
 
 const images = [
   {
@@ -41,7 +35,7 @@ const MoreProjects = () => {
 
   useEffect(() => {
 
-    const mindHeigth = window.innerHeight + 1600
+    const mindHeigth = window.innerHeight + 2000
     function handleScroll() {
       const offset = window.scrollY
       if (offset > mindHeigth) {
