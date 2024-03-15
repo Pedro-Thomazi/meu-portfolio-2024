@@ -32,23 +32,17 @@ const MyProjects = () => {
       </section>
       <section className={styles.imagesContainer}>
         <div className={styles.images}>
-          <img src={ProjetoTheBlog} alt="Projeto TheBlog" style={{width: '100%'}} />
-          <div className={styles.imgs}>
-            <img src={fotoAmpMarshall} alt="Projeto Compra de Amplificador Marshall" />
-            <img src={fotoCalendar} alt="Projeto Calendario" />
-            <img src={listaDeCompras2} alt="Projeto Lista de Compras" />
-          </div>
-          <img src={lojaMuitaMelodia} alt="Projeto Muita Melodia" style={{width: '100%'}} />
-          <img src={fotoPokeM} alt="Projeto API do Pokemon" style={{width: '100%'}} />
-          <img src={projetoYoutube} alt="Projeto Replica do Youtube" style={{width: '100%'}} />
-          <div className={styles.imgs}>
-            <img src={moviesOnly2} alt="Projeto Only Movies" />
-            <img src={projetoHoFame} alt="Projeto HoFame" />
-            <img src={projetoMyGram} alt="Projeto MyGram" />
-          </div>
-          
-          <a className={styles.principalWorks} href="#principalsProjects">Principais Projetos</a>
-        </div>
+          <div className={`${styles.item} ${styles.img1}`}></div>
+          <div className={`${styles.item} ${styles.img2}`}></div>
+          <div className={`${styles.item} ${styles.img3}`}></div>
+          <div className={`${styles.item} ${styles.img4}`}></div>
+          <div className={`${styles.item} ${styles.img5}`}></div>
+          <div className={`${styles.item} ${styles.img6}`}></div>
+          <div className={`${styles.item} ${styles.img7}`}></div>
+          <div className={`${styles.item} ${styles.img8}`}></div>
+          <div className={`${styles.item} ${styles.img9}`}></div>
+        </div>        
+        <a className={styles.principalWorks} href="#principalsProjects">Principais Projetos</a>
       </section>
     </main>
   )

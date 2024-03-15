@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 250px;
   background-image: url('../../Images/bgimage1.jpg');
   background-size: cover;
 
@@ -25,69 +26,128 @@
 
 
   .imagesContainer {
-    width: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    filter: grayscale(100%);
+    transition: .5s;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
 
     .images {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      position: relative;
+      display: grid;
       gap: 10px;
-      filter: grayscale(1);
-      transition: .4s;
-      width: 100%;
+      width: 40vw;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+      grid-template-areas:
+        'img1 img1 img3'
+        'img1 img1 img3'
+        'img2 img4 img6'
+        'img5 img4 img6'
+        'img5 img4 img6'
+        'img7 img8 img8'
+        'img9 img9 img9';
 
-      &:hover {
-        filter: grayscale(0);
-      }
-
-      img {
-        padding: 15px;
-        background-color: #333;
-        border-radius: 10px;
-        width: 33.3%;
-        height: 250px;
-        object-fit: cover;
-        border: 1px solid transparent;
-        transition: .4s;
-
+      .item {
+        position: relative;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        transition: .5s;
 
         &:hover {
+          border-color: goldenrod;
           transform: scale(110%);
-          border-color: goldenrod;
+          z-index: 100;
         }
       }
 
-      .imgs {
-        display: flex;
-        width: 100%;
-        gap: 10px;
-        // background-color: blue;
-
-        img {
-          height: 200px;
-        }
+      .img1 {
+        grid-area: img1;
+        background-image: url('../../Images/imgProjects/fotoTheblog.png');
+        background-size: cover;
+        background-position: center;
       }
 
-      .principalWorks {
-        cursor: pointer;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        border: 1px solid transparent;
-        transition: .4s;
+      .img2 {
+        grid-area: img2;
+        background-image: url('../../Images/imgProjects/pageStoreMarshall.png');
+        background-size: cover;
+        background-position: center;
+      }
 
-        &:hover {
-          border-color: goldenrod;
-          background-color: transparent;
-          color: goldenrod;
-        }
+      .img3 {
+        grid-area: img3;
+        background-image: url('../../Images/imgProjects/moviesOnly2.png');
+        background-size: cover;
+        background-position: center;
+      }
 
+      .img4 {
+        grid-area: img4;
+        background-image: url('../../Images/imgProjects/lojaMuitaMelodia-2.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img5 {
+        grid-area: img5;
+        background-image: url('../../Images/imgProjects/fotoPokeM.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img6 {
+        grid-area: img6;
+        background-image: url('../../Images/imgProjects/fotoMygram.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img7 {
+        grid-area: img7;
+        background-image: url('../../Images/imgProjects/calculadora.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img8 {
+        grid-area: img8;
+        background-image: url('../../Images/imgProjects/cronometro.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .img9 {
+        grid-area: img9;
+        background-image: url('../../Images/imgProjects/crudJavascript.png');
+        background-size: cover;
+        // background-position: center;
       }
     }
+
+    .principalWorks {
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      border: 2px solid transparent;
+      margin: 20px 0;
+      color: #fff;
+      border-radius: 20px;
+      transition: .5s;
+
+      &:hover {
+        border-color: #fff;
+      }
+    }
+
   }
 }
 
@@ -97,25 +157,36 @@
 @media (max-width: 1250px) {
   .myProjectsContainer {
     flex-direction: column;
+    padding-bottom: 0;
 
     section {
       width: 100%;
     }
 
     .imagesContainer {
-      width: 90%;
+      width: 100%;
       align-self: center;
+
+      .images {
+        width: 90%;
+      }
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 596px) {
   .myProjectsContainer {
     .imagesContainer {
       .images {
-        .imgs {
-          display: none;
-        }
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'img1 img1 img3 img3'
+        'img1 img1 img3 img3'
+        'img2 img2 img6 img6'
+        'img2 img2 img6 img6'
+        'img5 img5 img8 img8'
+        'img5 img5 img8 img8'
+        'img9 img9 img9 img9';
       }
     }
   }
