@@ -22,12 +22,6 @@ const images = [
     link: 'https://replica-amazon.vercel.app/',
   },
   {
-    name: 'Calendário',
-    src: calendario,
-    alt: 'Projeto Calendário',
-    link: 'https://projeto-calendario-melhorado.vercel.app/',
-  },
-  {
     name: 'API do Pokemon',
     src: apiPokemon,
     alt: 'Projeto API do Pokemon',
@@ -38,37 +32,7 @@ const images = [
     src: crudEmJavascript,
     alt: 'Projeto CRUD de Usuários',
     link: 'https://crud-em-javascript.vercel.app/',
-  },
-  {
-    name: 'Teclado',
-    src: teclado,
-    alt: 'Projeto Teclado',
-    link: 'https://keyboard-em-javascript.vercel.app/',
-  },
-  {
-    name: 'Ho Fame (Comidas Italianas)',
-    src: hoFame,
-    alt: 'Projeto Ho Fame ',
-    link: 'https://hofame.vercel.app/',
-  },
-  {
-    name: 'Cronômetro',
-    src: cronometro,
-    alt: 'Projeto Cronômetro',
-    link: 'https://cronometro-legal.vercel.app/',
-  },
-  {
-    name: 'Loja Muita Melodia',
-    src: muitaMelodia,
-    alt: 'Projeto Loja Muita Melodia',
-    link: 'https://muita-melodia.vercel.app/',
-  },
-  {
-    name: 'Calculadora',
-    src: calculadora,
-    alt: 'Projeto Calculadora',
-    link: 'https://calculadora-legal-nine.vercel.app/',
-  },
+  }
 ]
 
 const MoreProjects = () => {
@@ -121,6 +85,8 @@ const MoreProjects = () => {
           </Link>
         ))}
       </section>
+
+      <Link className={styles.linkMoreProjects} to='/moreprojects'>Ver Todo os Projetos</Link>
     </main>
   )
 }

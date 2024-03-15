@@ -1,7 +1,7 @@
 .moreProjects {
   background-image: url('../../Images/bgimage2.jpg');
   background-size: cover;
-  padding-top: 70px;
+  padding: 70px 0;
 
   .header {
     display: flex;
@@ -139,6 +139,23 @@
         text-align: center;
         transition: .4s;
       }
+    }
+  }
+
+  .linkMoreProjects {
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    margin-left: 20px;
+    color: #fff;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: #fff;
+      background-color: transparent;
     }
   }
 

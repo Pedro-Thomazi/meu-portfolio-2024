@@ -1,23 +1,16 @@
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import PageTop from "./Components/PageTop/PageTop";
-import MyProjects from "./Components/MyProjects/MyProjects";
-import PrincipalProjects from "./Components/PrincipalProjects/PrincipalProjects";
-import MoreProjects from "./Components/MoreProjects/MoreProjects";
-import AboutMe from "./Components/AboutMe/AboutMe";
-import Contacts from "./Components/Contacts/Contacts";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import PageMoreProjects from "./Page/PageMoreProjects";
+import Home from "./Page/Home";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
-        <PageTop />
-        <MyProjects />
-        <PrincipalProjects />
-        <MoreProjects />
-        <AboutMe />
-        <Contacts />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/moreprojects" element={<PageMoreProjects />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
