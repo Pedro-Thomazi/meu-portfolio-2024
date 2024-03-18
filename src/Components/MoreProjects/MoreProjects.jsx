@@ -32,10 +32,12 @@ const images = [
 const MoreProjects = () => {
   const [scrolled, setScrolled] = useState(false)
 
+  console.log('Altura: ' + window.innerHeight)
+
 
   useEffect(() => {
 
-    const mindHeigth = window.innerHeight + 2000
+    const mindHeigth = window.innerHeight + 1600
     function handleScroll() {
       const offset = window.scrollY
       if (offset > mindHeigth) {
