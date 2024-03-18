@@ -95,7 +95,7 @@
     overflow: hidden;
 
     h1 {
-      font-size: 9vw;
+      font-size: clamp(2.5rem, 1em + 9vw, 9vw);
       font-weight: 200;
       color: #555;
       transition: 1s;

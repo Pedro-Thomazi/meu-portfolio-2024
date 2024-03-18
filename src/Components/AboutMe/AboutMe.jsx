@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   useEffect(() => {
 
-    const mindHeigth = window.innerHeight + 2800
+    const mindHeigth = window.innerHeight + 2700
     function handleScroll() {
       const offset = window.scrollY
       if (offset > mindHeigth) {

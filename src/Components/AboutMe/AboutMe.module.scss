@@ -1,7 +1,7 @@
 .aboutMeContainer {
   position: relative;
   background-color: #1e1e1e;
-  padding-top: 100px;
+  padding-top: 50px;
 
   .number {
     position: absolute;
@@ -9,7 +9,7 @@
     font-weight: 600;
     color: #333;
     left: 300px;
-    top: -50px;
+    top: 0px;
     opacity: 0;
     transition: .8s;
 
@@ -28,7 +28,7 @@
     overflow: hidden;
 
     h1 {
-      font-size: 9vw;
+      font-size: clamp(2.5rem, 1em + 9vw, 9vw);
       font-weight: 200;
       color: #ddd;
       transition: 1s;
@@ -71,6 +71,7 @@
     gap: 10px;
 
     p {
+      font-family: "Cinzel", serif;
       font-size: 1.3rem;
       font-weight: 500;
       color: #555;
@@ -126,6 +127,7 @@
           border: 1px solid #555;
 
           h2 {
+            font-family: "Cinzel", serif;
             font-size: 1.7rem;
             text-transform: uppercase;
           }
@@ -146,6 +148,7 @@
           border: 1px solid #555;
 
           h2 {
+            font-family: "Cinzel", serif;
             font-size: 1.7rem;
             text-transform: uppercase;
           }
@@ -193,6 +196,7 @@
     .number {
       left: 50px;
     }
+
     .context {
       .allContainers {
         flex-direction: column;
@@ -204,21 +208,17 @@
 @media (max-width: 500px) {
   .aboutMeContainer {
     .number {
-      left: 70px;
+      top: 10px;
     }
 
     .header {
-      h1 {
-        font-size: 1.7rem;
-      }
-
       svg {
         display: none;
       }
     }
 
     .details {
-      
+
       p {
         font-size: .7rem;
       }

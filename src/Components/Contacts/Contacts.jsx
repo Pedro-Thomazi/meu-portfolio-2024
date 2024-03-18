@@ -15,7 +15,7 @@ const Contacts = () => {
 
   useEffect(() => {
 
-    const mindHeigth = window.innerHeight + 4000
+    const mindHeigth = window.innerHeight + 3900
     function handleScroll() {
       const offset = window.scrollY
       if (offset > mindHeigth) {
