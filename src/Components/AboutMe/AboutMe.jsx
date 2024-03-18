@@ -42,11 +42,11 @@ const AboutMe = () => {
         <h1 className={`${scrolled ? styles.toRight : ''}`}>Mim</h1>
       </header>
       <div className={styles.details}>
-        <p>Testes</p>
+        <p>Descobrindo</p>
         <span></span>
-        <p>Ideias</p>
+        <p>História</p>
         <span></span>
-        <p>Aprendizados</p>
+        <p>Experiências</p>
       </div>
 
       <section className={styles.context}>

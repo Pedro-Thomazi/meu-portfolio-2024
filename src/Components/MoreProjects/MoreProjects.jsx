@@ -34,6 +34,14 @@ const MoreProjects = () => {
 
   console.log('Altura: ' + window.innerHeight)
 
+  function srollTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
+
 
   useEffect(() => {
 
@@ -82,7 +90,7 @@ const MoreProjects = () => {
         ))}
       </section>
 
-      <Link className={styles.linkMoreProjects} to='/moreprojects'>Ver Todo os Projetos</Link>
+      <Link onClick={srollTop} className={styles.linkMoreProjects} to='/moreprojects'>Ver Todo os Projetos</Link>
     </main>
   )
 }

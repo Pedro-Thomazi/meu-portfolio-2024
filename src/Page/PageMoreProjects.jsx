@@ -15,36 +15,42 @@ const PageMoreProjects = () => {
       src: calendario,
       alt: 'Projeto Calendário',
       link: 'https://projeto-calendario-melhorado.vercel.app/',
+      description: ''
     },
     {
       name: 'Teclado',
       src: teclado,
       alt: 'Projeto Teclado',
       link: 'https://keyboard-em-javascript.vercel.app/',
+      description: ''
     },
     {
       name: 'Ho Fame (Comidas Italianas)',
       src: hoFame,
       alt: 'Projeto Ho Fame ',
       link: 'https://hofame.vercel.app/',
+      description: ''
     },
     {
       name: 'Cronômetro',
       src: cronometro,
       alt: 'Projeto Cronômetro',
       link: 'https://cronometro-legal.vercel.app/',
+      description: ''
     },
     {
       name: 'Loja Muita Melodia',
       src: muitaMelodia,
       alt: 'Projeto Loja Muita Melodia',
       link: 'https://muita-melodia.vercel.app/',
+      description: ''
     },
     {
       name: 'Calculadora',
       src: calculadora,
       alt: 'Projeto Calculadora',
       link: 'https://calculadora-legal-nine.vercel.app/',
+      description: ''
     },
   ]
 
