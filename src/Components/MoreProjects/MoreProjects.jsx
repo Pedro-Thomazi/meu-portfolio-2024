@@ -90,7 +90,7 @@ const MoreProjects = () => {
         ))}
       </section>
 
-      <Link onClick={srollTop} className={styles.linkMoreProjects} to='/moreprojects'>Ver Todo os Projetos</Link>
+{/*       <Link onClick={srollTop} className={styles.linkMoreProjects} to='/moreprojects'>Ver Todo os Projetos</Link> */}
     </main>
   )
 }
